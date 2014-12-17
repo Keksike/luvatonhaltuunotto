@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ajoneuvon Luvaton Haltuunotto - Tarinoita Kouvostoliitosta</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<link rel="stylesheet" href="animate.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="divsize.js"></script>
+</head>
+<body  onload="StartMove()">
+	<div id="imgcontain">
+		<img id="logo" src="./img/alh.png" class="animated fadeIn">
+		<br>
+		<img id="logo2" src="./img/kouvostoliitto.png" class="animated bounceIn">
+	</div>
+
+	<div id="redditdiv">
+			<a href="http://www.reddit.com/r/SuomiGTA/" id="reddit">http://www.reddit.com/r/SuomiGTA/</a>
+			<a href="http://webchat.quakenet.org/?channels=suomigta" id="irc">#suomigta @ QuakeNet</a>
+	</div>
+	<div id="footer">
+		<a href="https://github.com/Keksike" id="keksike">webpage by: Keksike</a>
+	</div>
+
+	<audio id="musiikki" controls autoplay>
+		<source src="Hellcity666.mp3" type="audio/mpeg">
+	</audio>
+</body>
+
+
+<!-- Kuvien slidetys -->
+<script language="javascript">
+
+	function StartMove() {
+		var bgImg = new Image();
+		bgImg.src = "img/taustat/yhdistetty.png";
+
+		window.cssMaxWidth = bgImg.width;
+
+		window.cssXPos = 0;
+
+		var speed = 1.3;
+
+		setInterval("moveBackground()",30);
+	}
+
+	function moveBackground () {
+
+
+		window.cssXPos = window.cssXPos - 1.3;
+
+		if (window.cssXPos >= window.cssMaxWidth) {
+			window.cssXPos = 0;
+		}
+		toMove = document.getElementById("imgcontain");
+
+		toMove.style.backgroundPosition = window.cssXPos+"px 0px";
+
+	}
+</script>
+
+</html>
+

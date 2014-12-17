@@ -1,0 +1,91 @@
+body{
+	width: 98%;
+	height: 100%;
+	background-image: url(broken_noise.png);
+}
+
+@font-face {
+    font-family: adrip;
+    src: url(adrip1.ttf);
+}
+
+#imgcontain{
+	border: none;
+	background-image: url("img/taustat/yhdistetty.png");
+	background-size: 1120%;
+	background-repeat: repeat-x;
+
+	margin-top: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	height: 780px;
+	width: 780px;
+}
+
+#logo{
+	display: block;
+	padding-left: 35px;
+	padding-top: 170px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-duration: 5s;
+	width: 70%;
+}
+#logo2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	animation-delay: 4.85s;
+	-webkit-animation-delay: 4.85s;
+	margin-bottom: 3%;
+}
+
+#redditdiv{
+	position: fixed;
+	bottom: 5%;
+	width: 99%;
+}
+#irc{
+	position: absolute;
+	right: 3%;
+	font-family: adrip;
+	font-size: 220%;
+	color: white;
+	transition: font-size 0.5s;
+}
+#irc:hover{
+	font-size: 230%;
+	opacity: 0.5;
+}
+#reddit{
+	position: absolute;
+	left: 3%;
+	font-family: adrip;
+	font-size: 220%;
+	color: white;
+	transition: font-size 0.5s;
+}
+#reddit:hover{
+	font-size: 230%;
+	opacity: 0.5;
+}
+
+#footer{
+	width: 100%;
+	display: block;
+
+}
+
+#keksike{
+	font-size: 10px;
+	position: fixed;
+	bottom: 0px;
+	color: white;
+}
+
+#musiikki{
+	visibility: hidden;
+}
